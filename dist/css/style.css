@@ -631,16 +631,17 @@ section {
   width: 3px;
   background-color: #EEEFF2;
   height: 125px;
-  right: -112px;
+  right: 0;
 }
 .itd__flex-container-one, .itd__flex-container-two, .itd__flex-container-three {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  width: 33.3333333333%;
 }
 .itd__flex-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
 }
