@@ -579,7 +579,7 @@ section {
   &__flex-container-two,
   &__flex-container-three {
     @include flex(flex, center, center);
-    width: calc(100% / 3)
+    width: calc(100% / 3);
   }
 
   &__flex-container {
