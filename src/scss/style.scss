@@ -201,6 +201,7 @@ section {
     @media (max-width: 767px) {
       display: flex;
       justify-content: flex-end;
+      align-items: center;
     }
   }
 
@@ -544,7 +545,7 @@ section {
   position: relative;
   margin-bottom: 50px;
   display: flex;
-  box-shadow: 1px 1px 10px #EEEFF2;
+  box-shadow: 0px 26px 24px 2px #EEEFF2;
   max-width: 80%;
   border-radius: 10px;
   margin: 0 auto;
@@ -657,7 +658,7 @@ section {
 
 
 .benefits {
-  background: #F6F6F6;
+  background: #fff;
   padding: 80px 0 120px 0;
 
   &__flex-container {
@@ -1028,6 +1029,15 @@ section {
       text-align: center;
       margin: 0;
     }
+
+    @media (max-width: 767px) {
+      max-width: 100%;
+      padding: 30px 32px;
+    }
+
+    @media (max-width: 479px) {
+      padding: 20px 22px;
+    }
   }
 
   &__title {
@@ -1042,7 +1052,7 @@ section {
     }
 
     @media (max-width: 479px) {
-      @include text(25px, #0B132A, 500, 35px);
+      @include text(25px, #0B132A, 500, 25px);
       margin-bottom: 10px;
       max-width: 100%;
     }

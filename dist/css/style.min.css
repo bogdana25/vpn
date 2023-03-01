@@ -236,6 +236,7 @@ section {
   .navbar-container {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
   }
 }
 .navbar__burger {
@@ -606,7 +607,7 @@ section {
   position: relative;
   margin-bottom: 50px;
   display: flex;
-  box-shadow: 1px 1px 10px #EEEFF2;
+  box-shadow: 0px 26px 24px 2px #EEEFF2;
   max-width: 80%;
   border-radius: 10px;
   margin: 0 auto;
@@ -732,7 +733,7 @@ section {
 }
 
 .benefits {
-  background: #F6F6F6;
+  background: #fff;
   padding: 80px 0 120px 0;
 }
 .benefits__flex-container {
@@ -1166,6 +1167,17 @@ section {
     margin: 0;
   }
 }
+@media (max-width: 767px) {
+  .subscribe__flexcontainer {
+    max-width: 100%;
+    padding: 30px 32px;
+  }
+}
+@media (max-width: 479px) {
+  .subscribe__flexcontainer {
+    padding: 20px 22px;
+  }
+}
 .subscribe__title {
   font-size: 35px;
   color: #0B132A;
@@ -1186,7 +1198,7 @@ section {
     font-size: 25px;
     color: #0B132A;
     font-weight: 500;
-    line-height: 35px;
+    line-height: 25px;
     margin-bottom: 10px;
     max-width: 100%;
   }
