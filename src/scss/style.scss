@@ -569,6 +569,10 @@ section {
       background-color: #EEEFF2;
       height: 125px;
       right: 0;
+
+      @media (max-width: 767px) {
+        display: none;
+      }
     }
 
   }
@@ -579,11 +583,20 @@ section {
   &__flex-container-three {
     @include flex(flex, center, center);
     width: calc(100% / 3);
+
+    @media (max-width: 667px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 
   &__flex-container {
     @include flex(flex, flex-start, center);
     flex-wrap: wrap;
+
+    // @media (max-width: 767px) {
+    //   flex-direction: column;
+    // }
   }
 
   &__flex-box {
@@ -1010,7 +1023,7 @@ section {
     box-shadow: 2px 2px 9px #DDDDDD;
     border-radius: 10px;
 
-    @media (max-width: 877px) {
+    @media (max-width: 992px) {
       display: inline-block;
       text-align: center;
       margin: 0;
@@ -1024,6 +1037,10 @@ section {
     max-width: 370px;
     margin-bottom: 20px;
 
+    @media (max-width: 992px) {
+      margin-bottom: 10px;
+    }
+
     @media (max-width: 479px) {
       @include text(25px, #0B132A, 500, 35px);
       margin-bottom: 10px;
@@ -1034,8 +1051,8 @@ section {
   &__subtitle {
     @include text(16px, #4F5665, 400, 30px);
 
-    @media (max-width: 877px) {
-      margin-bottom: 30px;
+    @media (max-width: 992px) {
+      margin-bottom: 20px;
     }
 
     @media (max-width: 479px) {
@@ -1048,8 +1065,6 @@ section {
     @include flex(flex, center, center);
     background-color: #F53838;
     border-radius: 10px;
-    // max-width: 250px;
-    // width: 100%;
     padding: 20px 50px;
 
     &:hover {
@@ -1059,7 +1074,7 @@ section {
       transition: 0.5s;
     }
 
-    @media (max-width: 877px) {
+    @media (max-width: 992px) {
       @include text(14px, #FFFFFF, 700, 20px);
       padding: 20px 50px;
       display: inline-block;
@@ -1072,8 +1087,13 @@ section {
     }
   }
 
-  @media (max-width: 877px) {
+  @media (max-width: 992px) {
     text-align: center;
+  }
+
+  @media (max-width: 992px) {
+    margin-bottom: 50px;
+
   }
 }
 
